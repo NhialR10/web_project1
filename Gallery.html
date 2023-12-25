@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="lightbox.css" />
+    <title>Gallery - Lubaba</title>
+  </head>
+  <body class="gglry">
+    <div class="navHeader">
+      <div class="navbar">
+        <div class="logo">
+          <a href="index.html">
+            <img src="Images/logo.jpeg" width="100px" />
+          </a>
+          <p id="currentTime">16:03:20</p>
+        </div>
+
+        <nav>
+          <ul id="MenuItems">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Product.html">Products</a></li>
+            <li class="active">
+              <a href="Gallery.html">Gallery</a>
+            </li>
+            <li>
+              <a href="Contact.html">Contact</a>
+            </li>
+            <li>
+              <a href="Account.html">Account</a>
+            </li>
+          </ul>
+        </nav>
+        <a href="Cart.html"
+          ><img src="Images/Septy.png" width="30px" height="25px"
+        /></a>
+        <img
+          src="Images/Menu.png"
+          class="menu-icon"
+          height="100px"
+          onclick="menutoggle()"
+        />
+      </div>
+    </div>
+
+    <div class="container-fluid gallaryContainer">
+      <div class="row">
+        <div class="col-4 gallaryImg">
+          <a
+            href="Images/shoes_1.jpg"
+            data-lightbox="models"
+            data-title="Couple-DMX"
+          >
+            <img src="Images/shoes_1.jpg" height="200px" />
+          </a>
+        </div>
+        <div class="col-4 gallaryImg">
+          <a
+            href="Images/shirt_1.jpg"
+            data-lightbox="models"
+            data-title="Blue-ElISA"
+          >
+            <img src="Images/shirt_1.jpg" height="200px" />
+          </a>
+        </div>
+        <div class="col-4 gallaryImg">
+          <a
+            href="Images/shirt_2.jpg"
+            data-lightbox="models"
+            data-title="Bad-Girl"
+          >
+            <img src="Images/shirt_2.jpg" height="200px" />
+          </a>
+        </div>
+        <div class="col-4 gallaryImg">
+          <a
+            href="Images/RedHommeTshort.jpg"
+            data-lightbox="models"
+            data-title="PsychoPate-RedMan"
+          >
+            <img src="Images/RedHommeTshort.jpg" height="200px" />
+          </a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-4 gallaryImg">
+          <a
+            href="Images/shoes_3.jpg"
+            data-lightbox="models"
+            data-title="Cuty-Girl"
+          >
+            <img src="Images/shoes_3.jpg" height="200px" />
+          </a>
+        </div>
+        <div class="col-4 gallaryImg">
+          <a
+            href="Images/AlfansoKardes.jpg"
+            data-lightbox="models"
+            data-title="Bad-Boy"
+          >
+            <img src="Images/AlfansoKardes.jpg" height="200px" />
+          </a>
+        </div>
+        <div class="col-4 gallaryImg">
+          <a
+            href="Images/shirt_3.jpg"
+            data-lightbox="models"
+            data-title="Baby-Girl"
+          >
+            <img src="Images/shirt_3.jpg" height="200px" />
+          </a>
+        </div>
+        <div class="col-4 gallaryImg">
+          <a
+            href="Images/shoes_7.jpg"
+            data-lightbox="models"
+            data-title="Baby-Girl"
+          >
+            <img src="Images/shoes_7.jpg" height="200px" />
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4 gallaryImg">
+          <a
+            href="Images/shoes_5.jpg"
+            data-lightbox="models"
+            data-title="Blue-ElISA"
+          >
+            <img src="Images/shoes_5.jpg" height="200px" />
+          </a>
+        </div>
+        <div class="col-4 gallaryImg">
+          <a
+            href="Images/Montre2.jpg"
+            data-lightbox="models"
+            data-title="Classic-Watch"
+          >
+            <img src="Images/Montre2.jpg" height="200px" />
+          </a>
+        </div>
+        <div class="col-4 gallaryImg">
+          <a
+            href="Images/BG1.jpg"
+            data-lightbox="models"
+            data-title="Blue-ElISA"
+          >
+            <img src="Images/BG1.jpg" height="200px" />
+          </a>
+        </div>
+        <div class="col-4 gallaryImg">
+          <a
+            href="Images/SporMontre.jpg"
+            data-lightbox="models"
+            data-title="Sport-Watch"
+          >
+            <img src="Images/SporMontre.jpg" height="200px" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!------footer------->
+
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <h3>Download Our App</h3>
+            <p>Download App for Android and IOS Mobile Phone</p>
+            <div class="app-logo">
+              <img src="Images/gogogoolePlay.png" />
+              <img src="Images/StoryApp.svg" />
+            </div>
+          </div>
+          <div class="footer-col-2">
+            <img src="Images/logo.jpeg" />
+            <p>
+              Our Purpose Is To Sustainably Make the Pleasure and Benefits of
+              Sport Accessible to the Many
+            </p>
+          </div>
+          <div class="footer-col-3">
+            <h3>Usuful Links</h3>
+            <ul>
+              <li>Coupons</li>
+              <li>Blog Post</li>
+              <li>Return Policy</li>
+              <li>Join Affiliate</li>
+            </ul>
+          </div>
+          <div class="footer-col-4">
+            <h3>Follow us</h3>
+            <ul>
+              <li>Facebook</li>
+              <li>Twitter</li>
+              <li>Instagram</li>
+              <li>YouTube</li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <p class="copyright">Copyright 2023 - Lubaba</p>
+      </div>
+    </div>
+
+    <!-------JavaScript for Toggle Menu------->
+
+    <script>
+      var MenuItems = document.getElementById("MenuItems");
+
+      MenuItems.style.maxHeight = "0px";
+
+      function menutoggle() {
+        if (MenuItems.style.maxHeight == "0px") {
+          MenuItems.style.maxHeight = "200px";
+        } else {
+          MenuItems.style.maxHeight = "0px";
+        }
+      }
+    </script>
+
+    <!-- JavaScript for time -->
+    <script>
+      // Function to update the current time
+      function updateCurrentTime() {
+        // Get the current date and time
+        var currentTime = new Date();
+
+        // Format the time as HH:MM:SS
+        var hours = currentTime.getHours();
+        var minutes = currentTime.getMinutes();
+        var seconds = currentTime.getSeconds();
+
+        // Add leading zeros if needed
+        hours = (hours < 10 ? "0" : "") + hours;
+        minutes = (minutes < 10 ? "0" : "") + minutes;
+        seconds = (seconds < 10 ? "0" : "") + seconds;
+
+        // Display the formatted time in the element with id "currentTime"
+        document.getElementById("currentTime").innerHTML =
+          hours + ":" + minutes + ":" + seconds;
+      }
+
+      // Update the current time initially
+      updateCurrentTime();
+
+      // Update the current time every second (1000 milliseconds)
+      setInterval(updateCurrentTime, 1000);
+    </script>
+  </body>
+</html>

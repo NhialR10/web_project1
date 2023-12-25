@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
+        <title>Lubaba store</title>
+    </head>
+<body>
+    
+    
+    <div class="header">
+        <div class="header-home">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="Images/logo.jpeg" width="100px"></a>  
+                    <p id="currentTime">16:03:20</p>    
+                </div>  
+                
+            <nav>
+                <ul id="nav">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="Product.html">Products</a></li>
+                    <li><a href="Gallery.html">Gallery</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <li><a href="Account.html">Account</a></li>
+                </ul>
+               
+            </nav> 
+            <a href="Cart.html"><img src="Images/Septy.png" width="30px" height="25px" class="sepet"></a>
+            <img src="Images/Menu.png" class="menu-icon" height="100px" onclick="menutoggle()">
+        </div>
+    </div>
+
+        <div class="row">
+             <div class="col-2">
+                <h1 style="margin-left: 50px;" >Give Your dresser <br> A New Style!</h1>
+                <p style="margin-left: 50px;">smartness isn't always putting on new clothes.it is about knowing where to get the best quality.
+                    be consistent<br>smart people always show their Greatness by the way they dress.
+                </p>
+                <a style="margin-left: 50px;" href="Product.html" class="btn">Explore Now &#8594;</a>
+            </div>
+            <div class="col-2">
+                <img style="border-top-left-radius: 20%;border-bottom-right-radius: 20%;" src="Images/WelcomeGirl.jpg">
+            </div>
+        </div>
+        </div>
+   <!--new products-->
+
+   <div class="newProducts">
+    <h1>New Products</h1>
+<div class="new_products container-fluid">
+    <div class="new_product mx-3">
+        <span class="badge text-bg-danger">New</span>
+        <img src="Images/shoes_1.jpg" alt="">
+        
+    </div>
+    <div class="new_product mx-3">
+        <span class="badge text-bg-danger">New</span>
+        <img src="Images/shoes_2.jpg" alt="">
+    </div>
+    <div class="new_product mx-3">
+        <span class="badge text-bg-danger">New</span>
+        <img src="Images/shoes_3.jpg" alt="">
+    </div>
+    <div class="new_product mx-3">
+        <span class="badge text-bg-danger">New</span>
+        <img src="Images/shoes_5.jpg" alt="">
+    </div>
+    
+</div>
+</div>
+
+<!--Featured Product-->
+ 
+<div class="container-fluid featured_products">
+    <h2 class="title">Featured Products</h2>
+    <div class="row">
+        <div class="col-4">
+            <a href="Product-details.html"><img src="Images/BG1.jpg" ></a>
+            <a href="Product-details.html"></a><h4>KhakiNoir Printed T-Shirt</h4></a>
+            <div class="rating">
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star-o" ></i>
+            </div>
+            <p>$50.00</p>
+        </div>
+        <div class="col-4">
+            <a href="NikeShoesProduct-details.html"> <img src="Images/chaussureal.jpg" ></a>
+           <a href="NikeShoesProduct-details.html"> <h4>Nike Sport-Shoes</h4></a>
+            <div class="rating">
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star-half-o" ></i>
+                <i class="fa fa-star-o" ></i>
+            </div>
+            <p>$23.33</p>
+        </div>
+        <div class="col-4">
+            <a href="nikeShoes.html"> <img src="Images/shoes_6.jpg" ></a>
+           <a href="nikeShoes.html"> <h4>prestigious Nike shoes</h4> </a>
+            <div class="rating">
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star-half-o" ></i>
+            </div>
+            <p>$69.87</p>
+        </div>
+        <div class="col-4">
+            <a href="HommeRouge.html"><img src="Images/RedHommeTshort.jpg" ></a>
+            <a href="HommeRouge.html"><h4>Red T-Shirt</h4></a>
+            <div class="rating">
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star-o" ></i>
+            </div>
+            <p>$19.33</p>
+        </div>
+    </div>
+    <div class="lates_products">
+    <h2 class="title">Lastest Products</h2>
+    <div class="row">
+        <div class="col-4">
+            <a href="Couple.html"><img src="Images/GandBoy.jpg" ></a>
+            <a href="Couple.html"><h4>Khaki Printed T-Short</h4></a>
+            <div class="rating">
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star-o" ></i>
+                <i class="fa fa-star-o" ></i>
+            </div>
+            <p>$50.00</p>
+        </div>
+        <div class="col-4">
+           <a href="SmartShirt.html"> <img src="Images/shirt_1.jpg" ></a>
+            <a href="SmartShirt.html"><h4>smart shirt</h4></a>
+            <div class="rating">
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star-half-o" ></i>
+            </div>
+            <p>$25.99</p>
+        </div>
+        <div class="col-4">
+           <a href="Chaussette.html"> <img src="Images/FarkliChaussette.jpg" ></a>
+           <a href="Chaussette.html"><h4>Various Col-Corap</h4> </a>
+            <div class="rating">
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star-half-o" ></i>
+                <i class="fa fa-star" ></i>
+            </div>
+            <p>$17.87</p>
+        </div>
+        <div class="col-4">
+            <a href="ClassicWatch.html"><img src="Images/Montre2.jpg" ></a>
+           <a href="ClassicWatch.html"> <h4>Hight M-Classic</h4></a>
+            <div class="rating">
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star-o" ></i>
+            </div>
+            <p>$74.34</p>
+        </div>
+        <div class="row">
+            <div class="col-4">
+               <a href="BlancShoes.html"><img src="Images/Pantalonn.webp" ></a> 
+              <a href="BlancShoes.html"> <h4>Tout-Blanc Shoes</h4> </a>
+                <div class="rating">
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star-o" ></i>
+                </div>
+                <p>$63.23</p>
+            </div>
+            <div class="col-4">
+                <a href="SportWatch.html"><img src="Images/SporMontre.jpg" > </a>
+                <a href="BlancShoes.html"><h4>Mvc Sport-Watch</h4> </a>
+                <div class="rating">
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star-half-o" ></i>
+                    <i class="fa fa-star-o" ></i>
+                </div>
+                <p>$10.00</p>
+            </div>
+            <div class="col-4">
+               <a href="Alfanso.html"> <img src="Images/AlfansoKardes.jpg" > </a>
+              <a href="Alfanso.html"> <h4>Complet Gentilman</h4> </a>
+                <div class="rating">
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star-half-o" ></i>
+                </div>
+                <p>$82.89</p>
+            </div>
+            <div class="col-4">
+                <a href="Tshirts.html"><img src="Images/shirt_2.jpg" ></a>
+              <a href="Tshirts.html"> <h4>smart white t-shirts</h4></a>
+                <div class="rating">
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star-o" ></i>
+                </div>
+                <p>$29.99</p>
+            </div>
+</div>
+</div>
+</div>
+</div>
+
+<!--offer-->
+
+<div class="offer">
+    <div class="small-container">
+        <div class="row">
+        <div class="col-2">
+        <img src="Images/Clllmtr.webp" class="offer-img">
+        </div>
+       
+        <div class="col-2">
+             <p>Exclusively Available On BAAFSTORE</p>
+             <h1>Class Band 5</h1>
+             <small>
+                The Class Band 5 features a 39.9% larger (than Mi Band 4) Black color 
+                full-touch display with adjustable brightness,so everything is clear as can be.
+                </small>
+                <br>
+             <a href="Cart.html" class="btn">Buy Now &#8594;</a>
+        </div>
+        </div>
+
+    </div>
+</div>
+
+<!---- Testimonial ---->
+
+<div class="testimonial">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-3">
+                <i class="fa fa-quote-left" ></i>
+             <p>
+                Hello as you can see i am Elon Musk the richest man in the world at this 
+                moment,since i was in middle we used to do shopping at BAAFSTORE.
+            </p>
+            <div class="rating">
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star-half-o" ></i>
+                <i class="fa fa-star-o" ></i>
+            </div>
+            <img src="Images/ElonMusk.jpeg">
+            <h3>Elon Musk</h3>
+            </div>
+            <div class="col-3">
+                <i class="fa fa-quote-left" ></i>
+             <p> 
+                I consider the owner of BAAFSTORE Farid as my son,with BAAFSTORE clothes are cheaper
+                everywhere in the world particulary in Niger, we need more and more entrepreneurs like him in our country. 
+            </p>
+            <div class="rating">
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star-half-o" ></i>
+            </div>
+            <img src="Images/MahamadouIssoufu.jpeg">
+            <h3>Issoufou Mahamadou</h3>
+            </div>
+            <div class="col-3">
+                <i class="fa fa-quote-left" ></i>
+             <p> 
+                My friend Farid, we were working together at metaverse on a big project, I really like
+                his mentality and the way he wants to built big empire in any field. 
+            </p>
+            <div class="rating">
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star-o" ></i>
+            </div>
+            <img src="Images/Marc zukerberg.jpeg">
+            <h3>Marck Zuckerberg</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----Brands------>
+<div class="brands">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-5">
+                <img src="Images/RollsRoyce.png">
+            </div>
+            <div class="col-5">
+                <img src="Images/cocacola.png">
+            </div>
+            <div class="col-5">
+                <img src="Images/paypal.png">
+            </div>
+            <div class="col-5">
+                <img src="Images/spaceX.png">
+            </div>
+            <div class="col-5">
+                <img src="Images/Tesla.png">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!------footer------->
+
+<div class="footer">
+    <div class="container"  >
+        <div class="row" >
+            <div class="footer-col-1" >
+                <h3>Download Our App</h3>
+            <p>Download App for Android and IOS Mobile Phone</p>
+            <div class="app-logo">
+                <img src="Images/gogogoolePlay.png">
+                <img src="Images/StoryApp.svg">
+            </div>    
+            </div>
+            <div class="footer-col-2">
+               <img src="Images/logo.jpeg">
+            <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits of Sport Accessible 
+                to the Many
+            </p>    
+            </div>
+            <div class="footer-col-3">
+                <h3>Usuful Links</h3>
+         <ul>
+            <li>Coupons</li>
+            <li>Blog Post</li>
+            <li>Return Policy</li>
+            <li>Join Affiliate</li>
+         </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow us</h3>
+         <ul>
+            <li>Facebook</li>
+            <li>Twitter</li>
+            <li>Instagram</li>
+            <li>YouTube</li>
+         </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2023 - Lubaba</p>
+    </div>
+</div>
+
+
+
+<script>
+
+    var MenuItems=document.getElementById("nav");
+    
+    MenuItems.style.maxHeight= "0px";
+    
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+        {
+            MenuItems.style.maxHeight= "200px"
+        }
+        else
+        {
+            MenuItems.style.maxHeight= "0px"
+        }
+    }
+    </script>
+
+
+<!-- JavaScript for time -->
+<script>
+    // Function to update the current time
+    function updateCurrentTime() {
+        // Get the current date and time
+        var currentTime = new Date();
+
+        // Format the time as HH:MM:SS
+        var hours = currentTime.getHours();
+        var minutes = currentTime.getMinutes();
+        var seconds = currentTime.getSeconds();
+
+        // Add leading zeros if needed
+        hours = (hours < 10 ? "0" : "") + hours;
+        minutes = (minutes < 10 ? "0" : "") + minutes;
+        seconds = (seconds < 10 ? "0" : "") + seconds;
+
+        // Display the formatted time in the element with id "currentTime"
+        document.getElementById("currentTime").innerHTML = hours + ":" + minutes + ":" + seconds;
+    }
+
+    // Update the current time initially
+    updateCurrentTime();
+
+    // Update the current time every second (1000 milliseconds)
+    setInterval(updateCurrentTime, 1000);
+</script>
+
+
+
+</body>
+</html>

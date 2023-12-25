@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>All Products - Lubaba</title>
+  </head>
+  <body>
+    <div class="navHeader">
+      <div class="navbar">
+        <div class="logo">
+          <a href="index.html">
+            <img src="Images/logo.jpeg" width="100px" />
+          </a>
+          <p id="currentTime">16:03:20</p>
+        </div>
+
+        <nav>
+          <ul id="MenuItems">
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="Product.html">Products</a></li>
+            <li>
+              <a href="Gallery.html">Gallery</a>
+            </li>
+            <li>
+              <a href="Contact.html">Contact</a>
+            </li>
+            <li>
+              <a href="Account.html">Account</a>
+            </li>
+          </ul>
+        </nav>
+        <a href="Cart.html"
+          ><img src="Images/Septy.png" width="30px" height="25px"
+        /></a>
+        <img
+          src="Images/Menu.png"
+          class="menu-icon"
+          height="100px"
+          onclick="menutoggle()"
+        />
+      </div>
+    </div>
+
+    <div class="container-fluid product-container">
+      <div class="row row-2">
+        <h2>All Products</h2>
+        <a style="margin-left: 50px" href="survey.html" class="btn">
+          Click to win</a
+        >
+        <select>
+          <option>Default Sorting</option>
+          <option>Sort By Price</option>
+          <option>Sort By Popularity</option>
+          <option>Sort By Rating</option>
+          <option>Sort By Sale</option>
+        </select>
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <a href="Couple.html"> <img src="Images/GandBoy.jpg" /> </a>
+          <a href="Couple.html"> <h4>Khaki Printed T-Shirt</h4> </a>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>$50.00</p>
+        </div>
+        <div class="col-4">
+          <a href="NikeShoesProduct-details.html">
+            <img src="Images/chaussureal.jpg" />
+          </a>
+          <a href="NikeShoesProduct-details.html">
+            <h4>Nike Sport-Shoes</h4>
+          </a>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>$23.33</p>
+        </div>
+        <div class="col-4">
+          <a href="nikeShoes.html"> <img src="Images/shoes_6.jpg" /></a>
+          <a href="nikeShoes.html"> <h4>prestigious Nike shoes</h4> </a>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>$69.87</p>
+        </div>
+        <div class="col-4">
+          <a href="HommeRouge.html"> <img src="Images/RedHommeTshort.jpg" /></a>
+          <a href="HommeRouge.html"> <h4>Red T-Shirt</h4></a>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>$19.33</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-4">
+          <a href="bsketrose.html"><img src="Images/BasketRose.jpg" /> </a>
+          <a href="bsketrose.html"> <h4>Rose Mode M-Shoes</h4> </a>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>$50.00</p>
+        </div>
+        <div class="col-4">
+          <a href="SmartShirt.html"> <img src="Images/shirt_1.jpg" /></a>
+          <a href="SmartShirt.html"><h4>smart shirt</h4></a>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>$25.99</p>
+        </div>
+        <div class="col-4">
+          <a href="Chaussette.html"
+            ><img src="Images/FarkliChaussette.jpg"
+          /></a>
+          <a href="Chaussette.html"> <h4>Various Col-Corap</h4></a>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <p>$17.87</p>
+        </div>
+        <div class="col-4">
+          <a href="ClassicWatch.html"> <img src="Images/Montre2.jpg" /> </a>
+          <a href="ClassicWatch.html"> <h4>Hight M-Classic</h4> </a>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>$74.34</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <a href="BlancShoes.html"> <img src="Images/Pantalonn.webp" /></a>
+          <a href="BlancShoes.html"> <h4>Tout-Blanc Shoes</h4></a>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>$63.23</p>
+        </div>
+
+        <div class="col-4">
+          <a href="SportWatch.html"> <img src="Images/SporMontre.jpg" /></a>
+          <a href="SportWatch.html"> <h4>Mvc Sport-Watch</h4></a>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>$10.00</p>
+        </div>
+
+        <div class="col-4">
+          <a href="Alfanso.html"> <img src="Images/AlfansoKardes.jpg" /> </a>
+          <a href="Alfanso.html"> <h4>Complet Gentilman</h4></a>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>$82.89</p>
+        </div>
+        <div class="col-4">
+          <a href="Tshirts.html"><img src="Images/shirt_2.jpg" /></a>
+          <a href="Tshirts.html"> <h4>smart white t-shirts</h4></a>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>$29.99</p>
+        </div>
+
+        <div id="added_product"></div>
+      </div>
+
+      <div class="page-btn">
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>&#8594;</span>
+      </div>
+    </div>
+    <!-- add product section -->
+    <div class="addAProduct container-fluid">
+      <h1>Add Product</h1>
+      <div class="addProduct_form">
+        <form onsubmit="addProduct(); return false;">
+          <label for="productName">Product Name</label>
+          <input
+            type="text"
+            id="productName"
+            required
+            placeholder="product name"
+          />
+          <label for="productPrice">Price</label>
+          <input type="text" id="productPrice" required placeholder="price" />
+
+          <label for="productImage">Image URL</label>
+          <input
+            type="text"
+            id="productImage"
+            placeholder="please make sure you add a valid image url"
+          />
+
+          <button class="add_product_btn" type="submit">Add</button>
+        </form>
+      </div>
+    </div>
+    <!-- end of add product section -->
+
+    <!-- added product section -->
+    <div class="added_products">
+      <h1>New products</h1>
+      <div id="productList" class="new_products container-fluid added"></div>
+    </div>
+    <!------footer------->
+
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <h3>Download Our App</h3>
+            <p>Download App for Android and IOS Mobile Phone</p>
+            <div class="app-logo">
+              <img src="Images/gogogoolePlay.png" />
+              <img src="Images/StoryApp.svg" />
+            </div>
+          </div>
+          <div class="footer-col-2">
+            <img src="Images/logo.jpeg" />
+            <p>
+              Our Purpose Is To Sustainably Make the Pleasure and Benefits of
+              Sport Accessible to the Many
+            </p>
+          </div>
+          <div class="footer-col-3">
+            <h3>Usuful Links</h3>
+            <ul>
+              <li>Coupons</li>
+              <li>Blog Post</li>
+              <li>Return Policy</li>
+              <li>Join Affiliate</li>
+            </ul>
+          </div>
+          <div class="footer-col-4">
+            <h3>Follow us</h3>
+            <ul>
+              <li>Facebook</li>
+              <li>Twitter</li>
+              <li>Instagram</li>
+              <li>YouTube</li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <p class="copyright">Copyright 2023 - Lubaba</p>
+      </div>
+    </div>
+    <!-------JavaScript for Toggle Menu------->
+
+    <script>
+      var MenuItems = document.getElementById("MenuItems");
+
+      MenuItems.style.maxHeight = "0px";
+
+      function menutoggle() {
+        if (MenuItems.style.maxHeight == "0px") {
+          MenuItems.style.maxHeight = "200px";
+        } else {
+          MenuItems.style.maxHeight = "0px";
+        }
+      }
+    </script>
+
+    <!-- JavaScript for adding product -->
+
+    <script>
+      function addProduct() {
+        // Get product details from the input fields
+        var productName = document.getElementById("productName").value;
+        var productPrice = document.getElementById("productPrice").value;
+        var productImage = document.getElementById("productImage").value;
+
+        if (productName.trim() !== "" && productPrice.trim() !== "") {
+          // Create a new product container div
+          var productContainer = document.createElement("div");
+          productContainer.className = "new_product mx-3";
+
+          // Create a span for the "New" badge
+          var badgeSpan = document.createElement("span");
+          badgeSpan.className = "badge text-bg-danger";
+          badgeSpan.textContent = "New";
+
+          // Create an image element
+          var productImg = document.createElement("img");
+          productImg.src = productImage;
+          productImg.alt = productName;
+
+          // Create a button for deleting the product
+          var deleteBtn = document.createElement("span");
+          deleteBtn.className = "deleteBtn";
+          deleteBtn.textContent = "X";
+          deleteBtn.onclick = function () {
+            productContainer.remove();
+          };
+
+          // Append elements to the product container
+          productContainer.appendChild(badgeSpan);
+          productContainer.appendChild(productImg);
+          productContainer.appendChild(deleteBtn);
+
+          // Append the product container to the product list
+          document.getElementById("productList").appendChild(productContainer);
+
+          // Clear the input fields
+          document.getElementById("productName").value = "";
+          document.getElementById("productPrice").value = "";
+          document.getElementById("productImage").value = "";
+        }
+      }
+    </script>
+
+    <!-- JavaScript for time -->
+    <script>
+      // Function to update the current time
+      function updateCurrentTime() {
+        // Get the current date and time
+        var currentTime = new Date();
+
+        // Format the time as HH:MM:SS
+        var hours = currentTime.getHours();
+        var minutes = currentTime.getMinutes();
+        var seconds = currentTime.getSeconds();
+
+        // Add leading zeros if needed
+        hours = (hours < 10 ? "0" : "") + hours;
+        minutes = (minutes < 10 ? "0" : "") + minutes;
+        seconds = (seconds < 10 ? "0" : "") + seconds;
+
+        // Display the formatted time in the element with id "currentTime"
+        document.getElementById("currentTime").innerHTML =
+          hours + ":" + minutes + ":" + seconds;
+      }
+
+      // Update the current time initially
+      updateCurrentTime();
+
+      // Update the current time every second (1000 milliseconds)
+      setInterval(updateCurrentTime, 1000);
+    </script>
+  </body>
+</html>

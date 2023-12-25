@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Contact - Lubaba</title>
+  </head>
+  <body>
+    <div class="navHeader">
+      <div class="navbar">
+        <div class="logo">
+          <a href="index.html">
+            <img src="Images/logo.jpeg" width="100px" />
+          </a>
+          <p id="currentTime">16:03:20</p>
+        </div>
+
+        <nav>
+          <ul id="MenuItems">
+            <li><a href="index.html">Home</a></li>
+            <li ><a href="Product.html">Products</a></li>
+            <li>
+              <a href="Gallery.html">Gallery</a>
+            </li>
+            <li  class="active">
+              <a href="Contact.html">Contact</a>
+            </li>
+            <li>
+              <a href="Account.html">Account</a>
+            </li>
+          </ul>
+        </nav>
+        <a href="Cart.html"
+          ><img src="Images/Septy.png" width="30px" height="25px"
+        /></a>
+        <img
+          src="Images/Menu.png"
+          class="menu-icon"
+          height="100px"
+          onclick="menutoggle()"
+        />
+      </div>
+    </div>
+    <!-- contact body -->
+    <!------Contact us content------->
+    <section class="location">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24173.45645780239!2d30.34475498649826!3d40.76901717033493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14ccb295b8095691%3A0xcbda9ddfbe7a2bec!2s%C4%B0stiklal%2C%2054050%20Serdivan%2FSakarya!5e0!3m2!1sen!2str!4v1665935083313!5m2!1sen!2str"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+
+    <section class="contact-us">
+      <div class="row">
+        <div class="contact-col">
+          <div>
+            <i class="fa fa-home"></i>
+            <span><h5>XZY Road, ABC Building</h5>
+              <p>Monday to Saturday, 10am to 6pm</p>
+            </span>
+          </div>
+          <div>
+            <i class="fa fa-phone"></i>
+            <span><h5>+90 534 610 12 57</h5>
+              <p>Sakarya, Serdiva, Turkey</p>
+            </span>
+          </div>
+          <div>
+            <i class="fa fa-envelope"></i>
+            <span><h5>nhiallualr10@gmail.com</h5>
+              <p>Email us your qury</p>
+            </span>
+          </div>
+          </div>
+
+          <div class="contact-col">
+            <form action="">
+              <input type="text" placeholder="Enter your name" required>
+              <input type="email" placeholder="Enter your email address" required>
+              <input type="text" placeholder="Enter your subject" required>
+              <textarea rows="8" placeholder="message"></textarea require>
+                <button type="submit" class="hero-btn red-btn">Send message</button>
+            </form>
+
+            <div>
+        </div>
+      </div>
+    </section>
+
+    <!------footer------->
+
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <h3>Download Our App</h3>
+            <p>Download App for Android and IOS Mobile Phone</p>
+            <div class="app-logo">
+              <img src="Images/gogogoolePlay.png" />
+              <img src="Images/StoryApp.svg" />
+            </div>
+          </div>
+          <div class="footer-col-2">
+            <img src="Images/logo.jpeg" />
+            <p>Our purpose is to provide presitigious gentlemen wears</p>
+          </div>
+          <div class="footer-col-3">
+            <h3>Usuful Links</h3>
+            <ul>
+              <li>Coupons</li>
+              <li>Blog Post</li>
+              <li>Return Policy</li>
+              <li>Join Affiliate</li>
+            </ul>
+          </div>
+          <div class="footer-col-4">
+            <h3>Follow us</h3>
+            <ul>
+              <li>Facebook</li>
+              <li>Twitter</li>
+              <li>Instagram</li>
+              <li>YouTube</li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <p class="copyright">Copyright 2023 - Lubaba</p>
+      </div>
+    </div>
+
+    <!-------JavaScript for Toggle Menu------->
+
+    <script>
+      var MenuItems = document.getElementById("MenuItems");
+
+      MenuItems.style.maxHeight = "0px";
+
+      function menutoggle() {
+        if (MenuItems.style.maxHeight == "0px") {
+          MenuItems.style.maxHeight = "200px";
+        } else {
+          MenuItems.style.maxHeight = "0px";
+        }
+      }
+    </script>
+
+    <!-------- Script for breadcrumbs ----------->
+
+    <script>
+      var Breacrumb = document.getElementById("Breadcrumb-Contact");
+      var bb = document.getElementsByClassName("breadcrumbs-link--active");
+
+      function breadColor() {
+        Breacrumb.style.color = "blue";
+        bb.style.color = "blue;";
+      }
+    </script>
+
+    <!-- JavaScript for time -->
+    <script>
+      // Function to update the current time
+      function updateCurrentTime() {
+          // Get the current date and time
+          var currentTime = new Date();
+  
+          // Format the time as HH:MM:SS
+          var hours = currentTime.getHours();
+          var minutes = currentTime.getMinutes();
+          var seconds = currentTime.getSeconds();
+  
+          // Add leading zeros if needed
+          hours = (hours < 10 ? "0" : "") + hours;
+          minutes = (minutes < 10 ? "0" : "") + minutes;
+          seconds = (seconds < 10 ? "0" : "") + seconds;
+  
+          // Display the formatted time in the element with id "currentTime"
+          document.getElementById("currentTime").innerHTML = hours + ":" + minutes + ":" + seconds;
+      }
+  
+      // Update the current time initially
+      updateCurrentTime();
+  
+      // Update the current time every second (1000 milliseconds)
+      setInterval(updateCurrentTime, 1000);
+  </script>
+  
+  </body>
+</html>
